@@ -13,3 +13,9 @@
   margin: 20px;
 }
 
+@media (max-width: 767px) {
+  .search-box {
+    display: none;
+  }
+}
+
