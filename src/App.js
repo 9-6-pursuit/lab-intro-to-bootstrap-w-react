@@ -8,17 +8,7 @@ import Table from "./components.js/Table";
 import Footer from "./components.js/Footer";
 
 function App() {
-  const [posts, setPosts] = useState(postData);
-  // const [search, setSearch] = useState("");
-  
-    // const handleSearch = () => {
-    //   const filteredPosts = posts.filter((post) => {
-    //     const titleMatch = post.title.toLowerCase().includes(search.toLowerCase());
-    //     const locationMatch = post.location.toLowerCase().includes(search.toLowerCase());
-    //     return titleMatch || locationMatch;
-    //   });
-    //   setPosts(filteredPosts);
-    // }; 
+  const [posts, setPosts] = useState(postData); 
 
   return (
     <main>
