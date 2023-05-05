@@ -36,6 +36,7 @@ function Posts({ posts }) {
         title={post.title}
         location={post.location}
         content={post.content}
+        // accesses the photo object at the current index.
         photoUrl={photos[index]?.urls?.regular || ""}
       />
     </div>
