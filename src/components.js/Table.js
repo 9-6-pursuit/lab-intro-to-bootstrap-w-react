@@ -22,7 +22,6 @@ function Table({ posts }) {
     <div>
     <h4>Posts by <span style={{color: "gold"}}>location</span></h4>
     <table className="table">
-      <caption>Posts by location</caption>
       <thead>
         <tr>
           <th>Location</th>
