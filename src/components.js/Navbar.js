@@ -2,8 +2,8 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand display-4 p-3">
-          Travel{" "}
+        <a className="navbar-brand display-4 p-3"><strong>
+          Travel{" "}</strong>
           <span
             style={{
               color: "gold",
