@@ -24,6 +24,7 @@ export default function SearchBar({ posts, setPosts }) {
   const handleClick = (event) => {
     event.preventDefault();
     handleSearch(search);
+    setSearch("")
   };
 
   return (
