@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function SearchBar({ posts, setPosts }) {
   const [search, setSearch] = useState("");
 
-  const handleSearch = (search) => {
+  const handleSearch = () => {
     const filteredPosts = posts.filter((post) => {
       const titleMatch = post.title
         .toLowerCase()
