@@ -4,6 +4,77 @@
   font-family: "Great Vibes", cursive;
 }
 
+.center-text {
+  font-family: "Great Vibes", cursive;
+}
+
+.script-font{
+  color: yellow;
+}
+
+.posts {
+  color: yellow;
+}
+
+.posts-container {
+  float: right;
+  padding: 70px
+}
+
 .post-image-height {
   height: 250px;
 }
+
+.center-text {
+   text-align: center;
+}
+
+header {
+  display: inline-block;
+}
+
+nav  {
+  display: inline-block;
+}
+
+
+
+button {
+  background-color: yellow;
+}
+
+
+nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+li span {
+    left: 290px;
+    position: relative;
+    top: 40px;
+    display:inline-block;
+    width:100px;
+}
+
+ul {
+  list-style-type:none;
+}
+
+footer {
+  background-color: yellow;
+  list-style-type: none;
+}
+
