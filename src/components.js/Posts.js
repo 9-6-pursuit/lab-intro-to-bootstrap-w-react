@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 function Posts({ posts }) {
   const [photos, setPhotos] = useState([]);
-
+// console.log(process.env.REACT_APP_API_KEY)
   useEffect(() => {
-    fetch(
-      `https://api.unsplash.com/photos/random/?count=${posts.length}&query=city&client_id=mVRQ5z8f4Ay-4LxEIFdmVGWoVWEqth6nrPXMeoqPsXM`
+    fetch( 
+      `https://api.unsplash.com/photos/random/?count=${posts.length}&query=city&client_id=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -19,7 +19,11 @@ function Posts({ posts }) {
   const PostCard = ({ title, location, content, photoUrl }) => {
     return (
       <div className="card mb-3">
-        <img src={photoUrl} className="card-img-top card-img-fixed" alt={title} />
+        <img
+          src={photoUrl}
+          className="card-img-top card-img-fixed"
+          alt={title}
+        />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <h6 className="card-subtitle mb-2 text-muted">{location}</h6>
@@ -36,7 +40,6 @@ function Posts({ posts }) {
         title={post.title}
         location={post.location}
         content={post.content}
-        // accesses the photo object at the current index.
         photoUrl={photos[index]?.urls?.regular || ""}
       />
     </div>
