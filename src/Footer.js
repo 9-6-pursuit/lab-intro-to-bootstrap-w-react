@@ -2,13 +2,17 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="bg-warning text-dark">
       <div className="footer-links">
-        <a href="#">Contact Me</a>
-        <a href="#">About the Author</a>
+        <div>
+        <a href="#" className="text-dark">Contact Me</a>
+        </div>
+        <div>
+        <a href="#" className="text-dark">About the Author</a>
+        </div>
       </div>
       <div className="copy-text">
-        <p>&copy; 2023 Travel Blog. All rights reserved.</p>
+        <p className="fw-bold">&copy; 2023 Travel Blog. All rights reserved.</p>
       </div>
     </footer>
   );
