@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Posts({ posts }) {
   const [photos, setPhotos] = useState([]);
-// console.log(process.env.REACT_APP_API_KEY)
+console.log(process.env.REACT_APP_API_KEY)
   useEffect(() => {
     fetch( 
       `https://api.unsplash.com/photos/random/?count=${posts.length}&query=city&client_id=${process.env.REACT_APP_API_KEY}`
