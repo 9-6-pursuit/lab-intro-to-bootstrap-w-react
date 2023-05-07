@@ -1,21 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-export default function SearchBar({ posts, setPosts }) {
-  const [search, setSearch] = useState("");
-
-  const handleSearch = () => {
-    const filteredPosts = posts.filter((post) => {
-      const titleMatch = post.title
-        .toLowerCase()
-        .includes(search.toLowerCase());
-      const locationMatch = post.location
-        .toLowerCase()
-        .includes(search.toLowerCase());
-      return titleMatch || locationMatch;
-    });
-    setPosts(filteredPosts);
-  };
+export default function SearchBar({ search, setSearch, handleSearch }) {
 
   const handleChange = (event) => {
     setSearch(event.target.value);
@@ -24,7 +9,7 @@ export default function SearchBar({ posts, setPosts }) {
   const handleClick = (event) => {
     event.preventDefault();
     handleSearch(search);
-    setSearch("")
+    setSearch("");
   };
 
   return (
@@ -44,7 +29,7 @@ export default function SearchBar({ posts, setPosts }) {
         className="btn btn-warning me-5  search-btn"
         type="button"
       >
-        Search
+        Cancel
       </button>
     </div>
   );
