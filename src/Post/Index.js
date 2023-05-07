@@ -31,7 +31,9 @@ function Index({ search, posts }) {
       </div>
       <div className="col-md-4">
         <div className="location-count">
-          <h2>Posts by Location</h2>
+          <h2>
+            Posts by <span className="text-warning">Location</span>
+          </h2>
           <table className="table table-sm">
             <thead>
               <tr>
