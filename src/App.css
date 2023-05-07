@@ -1,0 +1,37 @@
+.blockquote {
+    font-family: 'Clicker Script'; font-size: 30px;
+}
+
+
+#goSomewhere {
+    color: aliceblue;
+    background-color: black ;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.ice {
+    background-color: bisque;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: blueviolet;
+}
