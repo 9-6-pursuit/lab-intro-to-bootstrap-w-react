@@ -7,3 +7,38 @@
 .post-image-height {
   height: 250px;
 }
+
+/* ... (existing styles) */
+
+.blog-color {
+  color: orange;
+}
+
+.post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.search-label {
+  white-space: nowrap;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.custom-btn:hover {
+  color: black;
+  background-color: #ff9500;
+  border-color: #ff9100;
+}
+
+/* index.css or App.css */
+.btn btn-primary align-self-end custom-btn {
+  color: black;
+  background-color: #ff0004; /* Change this color to your preferred hover color */
+  border-color: #00b3ff; /* Change this color to match the background-color */
+}
