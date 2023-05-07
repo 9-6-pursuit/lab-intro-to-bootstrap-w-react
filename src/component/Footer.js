@@ -27,7 +27,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-6 d-flex justify-content-end">
+          <div className="col-md-6 d-flex justify-content-md-end justify-content-md-start justify-content-sm-start mt-md-2 mt-sm-2">
             <p className="mb-0">
               © Copyright <span className="text-black fw-bolder">MyTravelBlog</span> 2020
             </p>
