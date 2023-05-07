@@ -7,3 +7,26 @@
 .post-image-height {
   height: 250px;
 }
+
+.search-form {
+  width: 80%;
+}
+
+.content {
+  width: 81%;
+}
+
+.post-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+.banner-container {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  margin: 0;
+}
