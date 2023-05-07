@@ -9,7 +9,7 @@ export default function SearchBar({ search, setSearch, handleSearch }) {
   const handleClick = (event) => {
     event.preventDefault();
     handleSearch(search);
-    setSearch("");
+    // setSearch("");
   };
 
   return (

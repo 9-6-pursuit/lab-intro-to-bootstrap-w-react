@@ -13,6 +13,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   const handleSearch = () => {
+    console.log(search)
     const filteredPosts = posts.filter((post) => {
       const titleMatch = post.title
         .toLowerCase()
@@ -35,8 +36,6 @@ function App() {
       <Navbar />
       <Dquote />
       <SearchBar
-        posts={posts}
-        setPosts={setPosts}
         handleSearch={handleSearch}
         search={search}
         setSearch={setSearch}
