@@ -28,7 +28,7 @@ export default function Content({ posts, images, searchTerm, noMatches }) {
                 <p className="breadcrumb-item text-secondary">{post.location}</p>
                 <p className="card-text post-description fs-6 fw-light">{post.content}</p>
                 <div className="text-end">
-                  <a href="#" className="btn btn-warning fs-6">
+                  <a href="/" className="btn btn-warning fs-6">
                     Go to posts <i className="bi bi-caret-right-fill"></i>                    
                   </a>
                 </div>
