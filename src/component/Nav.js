@@ -1,4 +1,4 @@
-function Nav () {
+export default function Nav () {
     return (
         <nav className="container nav py-4">
             <h1 className="me-5">
@@ -13,5 +13,3 @@ function Nav () {
         </nav>
     )
 }
-
-export default Nav;
