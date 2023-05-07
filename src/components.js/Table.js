@@ -14,7 +14,7 @@ function Table({ posts }) {
   const rows = Object.entries(countByLocation).map(([location, count]) => (
     <tr key={location}>
       <td><strong>{location}</strong></td>
-      <td>{count}</td>
+      <td> <span class="badge text-bg-secondary">{count}</span> </td> 
     </tr>
   ));
 
