@@ -4,9 +4,9 @@ function Nav() {
   return (
     <>
         <nav className="navbar navbar-light bg-light">
-            <span className="navbar-text">
-                <span className="text logo1">Travel </span>
-                <span className="text logo2">Blog</span>
+            <span className="navbar-text fs-2">
+                <span className="text logo1"><b>Travel</b> </span>
+                <span className="text-warning fst-italic">Blog</span>
             </span>
         <ul className="nav justify-content-center">
             <li className="nav-item">

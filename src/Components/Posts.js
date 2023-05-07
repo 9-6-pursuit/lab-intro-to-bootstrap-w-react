@@ -1,19 +1,23 @@
 import React from 'react'
-import "../images/chicago.jpg" 
+import images from "../images/index.js"
 
-function Posts(props) {
+function Posts({postData}) {
+
+   
+
   return (
     <>
     <div>Posts</div>
       <div className="container p-5 my-5 border">
         <div className="card-columns card-deck"> 
             <div className="card border">
-                <img className="card-img-top" src="chicago.jpg" alt="Card location" />
+                <img className="card-img-top" src={images[postData[0].location.toLowerCase()]} alt="Card location" />
+
                 <div className="card-body">
-                    <h4 className="card-title">props.postData.title {props.postData.title}</h4>
-                    <p className="card-text">
-                      props.postData.location {props.postData.location} <br />
-                      props.postData.content {props.postData.content} <br />
+                    <h4 className="card-title">{postData[0].title}</h4>
+                    <p className="card-text text-truncate">
+                      {postData[0].location} <br />
+                      {postData[0].content} <br />
                     </p>
 
                 </div>
