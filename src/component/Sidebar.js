@@ -26,7 +26,7 @@ export default function Sidebar({posts}) {
         {locations.map(location => (
           <tr key={location}>
             <th scope="row">{location}</th>
-            <td><span className="badge text-bg-secondary">{locationCounts[location]}</span></td>
+            <td className="text-center"><span className="badge text-bg-secondary">{locationCounts[location]}</span></td>
           </tr>
         ))}
       </tbody>

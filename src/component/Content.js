@@ -20,7 +20,7 @@ export default function Content({ posts, images, searchTerm, noMatches }) {
             <div className="card">
               <img
                 src={images[post.location.toLowerCase().replace(/\s/g, '-')]}
-                className="card-img-top post-image-height"
+                className="card-img-top post-image-height object-fit-cover"
                 alt={post.location}
               />
               <div className="card-body">
