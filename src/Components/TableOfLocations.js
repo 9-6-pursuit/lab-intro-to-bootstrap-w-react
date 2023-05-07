@@ -6,7 +6,7 @@ function TableOfLocations() {
     <th>Posts by <span className="yellow-text">location</span>
     </th>
         
-        <table class="location-table table table-sm ">  
+        <table className="location-table table table-sm ">  
             <thead>
                 <tr>  
                     <th>Location</th>

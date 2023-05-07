@@ -3,17 +3,17 @@ import React from 'react'
 function Nav() {
   return (
     <>
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-text">
-                <span class="text logo1">Travel </span>
-                <span class="text logo2">Blog</span>
+        <nav className="navbar navbar-light bg-light">
+            <span className="navbar-text">
+                <span className="text logo1">Travel </span>
+                <span className="text logo2">Blog</span>
             </span>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#!">About</a>
+        <ul className="nav justify-content-center">
+            <li className="nav-item">
+                <a className="nav-link" href="#!">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#!">Popular posts</a>
+            <li className="nav-item">
+                <a className="nav-link" href="#!">Popular posts</a>
             </li>
         </ul>
         </nav>

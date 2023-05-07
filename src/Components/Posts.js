@@ -1,23 +1,24 @@
 import React from 'react'
+import "../images/chicago.jpg" 
 
-function Posts() {
+function Posts(props) {
   return (
     <>
     <div>Posts</div>
-      <div class="container p-5 my-5 border">
-        <div class="card-columns card-deck"> 
-            <div class="card border">
-                <img class="card-img-top" src="" alt="Card location" />
-                <div class="card-body">
-                    <h4 class="card-title">Sunny Southern California</h4>
-                    <p class="card-text">
-                      Disneyland <br />
-                      The place with the happiest horsees on earth.<br />
+      <div className="container p-5 my-5 border">
+        <div className="card-columns card-deck"> 
+            <div className="card border">
+                <img className="card-img-top" src="chicago.jpg" alt="Card location" />
+                <div className="card-body">
+                    <h4 className="card-title">props.postData.title {props.postData.title}</h4>
+                    <p className="card-text">
+                      props.postData.location {props.postData.location} <br />
+                      props.postData.content {props.postData.content} <br />
                     </p>
 
                 </div>
-                <div class="card-footer">
-                <a href="#!" class="btn btn-outline-light btn-link" id="goSomewhere">Go somewhere</a> <br />
+                <div className="card-footer">
+                <button  className="btn btn-warning position-end" type="submit">Go to post  ▶ </button> <br />
                   </div>
             </div>
 
