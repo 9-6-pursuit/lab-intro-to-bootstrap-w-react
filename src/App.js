@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [posts, setPosts] = useState(postData);
+  const [posts, setPosts] = useState([...postData]);
   const [search, setSearch] = useState("");
 
   function handleSearch(event) {
@@ -19,15 +19,19 @@ function App() {
     setPosts(filtered);
 }
 
+function resetPage() {
+    setPosts([...postData]);
+    document.querySelector("input").value = "";
+}
+
   return (
     <main>
       <Header/>
       <Quote/>
       <section className="container">
         <Search
-          postData={postData}
-          setPosts={setPosts}
           handleSearch={handleSearch}
+          resetPage={resetPage}
         />
         <section className="row row-gap-4">
           <Posts
