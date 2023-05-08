@@ -25,13 +25,13 @@ function App() {
     }
   }, [posts, search])
 
-  console.log(postData);
+  // console.log(postData);
   return (
     <main>
       <Nav />
       <Hero />
-      <Search search={search} handleSearch={setSearch}/>
-      <AllPosts posts={posts}/>
+      <Search search={search} setSearch={setSearch}/>
+      <AllPosts search={search} posts={posts}/>
       <Footer/>
     </main>
   );

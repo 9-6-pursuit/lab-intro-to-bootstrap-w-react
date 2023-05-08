@@ -1,11 +1,12 @@
+import React from "react";
 import TableRows from "./TableRows";
 import Post from "./Post";
 
 export default function AllPosts({search, posts}){
     const postElements = posts.filtered.map((post) => {
-        <Post key={post.id} post={post}/>
+        return <Post key={post.id} post={post}/>
     })
-    const rows = TableRows(posts.AllPosts)
+    const rows = TableRows(posts.all)
 
     return (
         <section className="container">
@@ -14,9 +15,9 @@ export default function AllPosts({search, posts}){
                     <div className="row row-cols-1 row-cols-lg-2 g-lg-3 g-2">
                         {postElements}
                     </div>
-                    {posts.filtered.length && (
+                    {!posts.filtered.length && (
                         <div className="alert alert-danger mt-4" role="alert">
-                        No posts found with the search term "{search}". Please try again.
+                            No posts found with the search term "{search}". Please try again.
                         </div>
                     )}
                 </div>

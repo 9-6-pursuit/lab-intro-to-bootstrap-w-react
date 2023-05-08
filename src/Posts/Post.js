@@ -1,7 +1,10 @@
-import images from "../images"
+import images from "../images/index.js"
 
-export default function Post({post}){
-    const dasherized = post.loaction.split(" ").join("-").toLowerCase()
+export default function Post({post}) {
+    if (!post) {
+        return null;
+    }
+    const dasherized = post.location.split(" ").join("-").toLowerCase()
 
     return (
         <div className="col">

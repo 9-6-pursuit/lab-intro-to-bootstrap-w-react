@@ -12,7 +12,7 @@ export default function TableRows(posts){
     const result = []
 
     for (let location in grouping) {
-        result.ppush(
+        result.push(
             <tr key={location}>
                 <th scope="row">{location}</th>
                 <td className="test-center">
