@@ -1,7 +1,7 @@
-function Table({ postData }) {
+function Table({ posts }) {
 
     const locations = {};
-    postData.forEach(post =>  locations[post.location] ? locations[post.location]++:locations[post.location]=1);
+    posts.forEach(post =>  locations[post.location] ? locations[post.location]++:locations[post.location]=1);
     const keys = Object.keys(locations);
 
     return (
