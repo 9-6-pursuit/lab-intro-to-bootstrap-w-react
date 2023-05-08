@@ -1,5 +1,4 @@
 import postData from "./data/posts.json";
-import images from "./images";
 import Header from "./components/Header";
 import Quote from "./components/Quote";
 import Search from "./components/Search";
@@ -13,19 +12,12 @@ function App() {
     <main>
       <Header/>
       <Quote/>
-      <section>
+      <section className="container">
         <Search/>
-        <div className="posts">
-          <Posts
-            postData={postData}
-            images={images}
-          />
-        </div>
-        <div className="table">
-          <Table
-            postData={postData}
-          />
-        </div>
+        <section className="row row-gap-4">
+          <Posts postData={postData} />
+          <Table postData={postData} />
+        </section>
       </section>
       <Footer/>
     </main>
