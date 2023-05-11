@@ -4,6 +4,18 @@
   font-family: "Great Vibes", cursive;
 }
 
-.post-image-height {
+.card-img-fixed {
   height: 250px;
 }
+
+.search-box {
+  padding: 10px;
+  margin: 20px;
+}
+
+@media (max-width: 767px) {
+  .search-box {
+    display: none;
+  }
+}
+
