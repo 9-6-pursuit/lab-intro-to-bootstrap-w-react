@@ -7,7 +7,9 @@ import images from "./images/index"
 function App() {
   return <main>
     <Header></Header>
-    <div class="d-flex justify-content-center">Travel is the only thing you buy that makes you richer...</div>
+    <blockquote class="blockquote text-center script-font">
+      <h1 class="mb-0">Travel is the only thing you buy that makes you richer...</h1>
+    </blockquote>
     <Search></Search>
     <aside className="container">
         <div class="row">
